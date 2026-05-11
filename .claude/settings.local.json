@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__tavily__tavily_search",
+      "mcp__exa__web_search_exa",
+      "mcp__exa__web_fetch_exa",
+      "PowerShell(node --version)",
+      "PowerShell(npm *)",
+      "PowerShell(wechat-cli *)",
+      "PowerShell(python --version)",
+      "PowerShell(pip install *)",
+      "WebSearch",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm list *)",
+      "Bash(npm uninstall *)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "mcp__firecrawl-mcp__firecrawl_scrape",
+      "Bash(pip install *)",
+      "Bash(wechat-cli *)",
+      "mcp__firecrawl-mcp__firecrawl_search",
+      "Bash(git clone *)",
+      "Bash(python -m uvicorn server:app --host 127.0.0.1 --port 8000)",
+      "Bash(curl -s -X POST http://127.0.0.1:8000/send -H \"Content-Type: application/json\" -d \"{\\\\\"friends\\\\\": [\\\\\"文件传输助手\\\\\"], \\\\\"messages\\\\\": [\\\\\"WinAutoWx 测试消息\\\\\"], \\\\\"backend\\\\\": \\\\\"win32\\\\\", \\\\\"verbose\\\\\": true}\")",
+      "Bash(timeout 5 python mcp_launcher.py)",
+      "Bash(curl *)",
+      "Bash(timeout 5 D:/python/python.exe mcp_launcher.py)",
+      "mcp__winauto-wx__send_messages",
+      "Bash(D:/python/python.exe -c ' *)",
+      "Bash(D:/python/python.exe *)",
+      "mcp__tavily__tavily_extract",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs"
+    ]
+  }
+}
