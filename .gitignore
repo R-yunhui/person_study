@@ -8,3 +8,12 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Secrets
+.env
+
+# Editor
+.vscode/
+
+# Logs
+mcp_startup.log

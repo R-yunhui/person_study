@@ -1,0 +1,278 @@
+09:57:56 === MCP Launcher starting ===
+09:57:57 Starting HTTP server...
+09:58:13 HTTP server failed to start: ERROR:    Error loading ASGI app. Could not import module "server".
+
+09:58:14 === MCP Launcher starting ===
+09:58:15 Starting HTTP server...
+09:58:31 HTTP server failed to start: ERROR:    Error loading ASGI app. Could not import module "server".
+
+09:59:08 === MCP Launcher starting ===
+09:59:09 Starting HTTP server...
+09:59:25 HTTP server failed to start: ERROR:    Error loading ASGI app. Could not import module "server".
+
+09:59:25 === MCP Launcher starting ===
+09:59:26 Starting HTTP server...
+09:59:28 === MCP Launcher starting ===
+09:59:29 Starting HTTP server...
+09:59:43 HTTP server failed to start: ERROR:    Error loading ASGI app. Could not import module "server".
+
+10:00:03 === MCP Launcher starting ===
+10:00:04 Starting HTTP server...
+10:00:20 HTTP server failed to start: ERROR:    Error loading ASGI app. Could not import module "server".
+
+10:01:43 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:01:43 CWD: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:01:44 Starting HTTP server...
+10:01:46 HTTP server ready
+10:01:46 HTTP subprocess registered
+10:01:46 Starting MCP server...
+10:02:14 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:02:14 CWD: D:\ryh\personal\study
+10:02:15 Starting HTTP server...
+10:02:17 HTTP server ready
+10:02:17 HTTP subprocess registered
+10:02:17 Starting MCP server...
+10:07:17 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:07:17 CWD: D:\ryh\personal\study
+10:07:17 HTTP server already running
+10:07:17 Starting MCP server...
+10:10:05 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:10:05 CWD: D:\ryh\personal\study
+10:10:05 HTTP server already running
+10:10:05 Starting MCP server...
+10:26:32 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:26:32 CWD: D:\ryh\personal\study
+10:26:32 HTTP server already running
+10:26:32 Starting MCP server...
+10:34:40 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:34:40 CWD: D:\ryh\personal\interview
+10:34:40 HTTP server already running
+10:34:40 Starting MCP server...
+11:20:07 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+11:20:07 CWD: D:\ryh\personal\interview\.claude\worktrees\festive-chatelet-049df7
+11:20:07 HTTP server already running
+11:20:07 Starting MCP server...
+11:47:26 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+11:47:26 CWD: \\wsl.localhost\Ubuntu\home\renyh\.hermes
+11:47:26 HTTP server already running
+11:47:26 Starting MCP server...
+13:55:39 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+13:55:39 CWD: D:\ryh\work\python_workspace\bisheng
+13:55:39 HTTP server already running
+13:55:39 Starting MCP server...
+15:01:38 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+15:01:38 CWD: \\wsl.localhost\Ubuntu\home\renyh\.hermes
+15:01:38 HTTP server already running
+15:01:38 Starting MCP server...
+15:43:20 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+15:43:20 CWD: D:\ryh\personal\interview
+15:43:20 HTTP server already running
+15:43:20 Starting MCP server...
+15:46:27 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+15:46:27 CWD: D:\ryh\personal\study
+15:46:27 HTTP server already running
+15:46:27 Starting MCP server...
+16:26:30 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+16:26:30 CWD: D:\ryh\personal\study
+16:26:30 HTTP server already running
+16:26:30 Starting MCP server...
+16:36:20 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+16:36:20 CWD: D:\ryh\personal\study
+16:36:20 HTTP server already running
+16:36:20 Starting MCP server...
+16:41:22 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+16:41:22 CWD: D:\ryh\personal\study
+16:41:22 HTTP server already running
+16:41:22 Starting MCP server...
+16:43:53 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+16:43:53 CWD: D:\ryh\personal\study
+16:43:53 HTTP server already running
+16:43:53 Starting MCP server...
+17:16:37 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+17:16:37 CWD: D:\ryh\personal\interview
+17:16:37 HTTP server already running
+17:16:37 Starting MCP server...
+18:36:17 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+18:36:17 CWD: D:\ryh\personal\interview
+18:36:17 HTTP server already running
+18:36:17 Starting MCP server...
+18:36:54 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+18:36:54 CWD: D:\ryh\personal\interview
+18:36:54 HTTP server already running
+18:36:54 Starting MCP server...
+18:42:34 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+18:42:34 CWD: D:\ryh\personal\interview
+18:42:34 HTTP server already running
+18:42:34 Starting MCP server...
+18:54:12 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+18:54:12 CWD: D:\ryh\personal\interview
+18:54:12 HTTP server already running
+18:54:12 Starting MCP server...
+19:08:17 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+19:08:17 CWD: D:\ryh\personal\interview
+19:08:17 HTTP server already running
+19:08:17 Starting MCP server...
+19:22:45 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+19:22:45 CWD: D:\ryh\personal\interview
+19:22:45 HTTP server already running
+19:22:45 Starting MCP server...
+09:41:12 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+09:41:12 CWD: D:\ryh\personal\interview
+09:41:13 Starting HTTP server...
+09:41:17 HTTP server ready
+09:41:17 HTTP subprocess registered
+09:41:17 Starting MCP server...
+09:53:03 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+09:53:03 CWD: D:\ryh\personal\interview
+09:53:03 HTTP server already running
+09:53:03 Starting MCP server...
+09:54:52 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+09:54:52 CWD: D:\ryh\personal\interview
+09:54:52 HTTP server already running
+09:54:52 Starting MCP server...
+09:59:40 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+09:59:40 CWD: D:\ryh\personal\interview
+09:59:40 HTTP server already running
+09:59:40 Starting MCP server...
+10:07:06 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:07:06 CWD: D:\ryh\personal\interview
+10:07:06 HTTP server already running
+10:07:06 Starting MCP server...
+10:16:45 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:16:45 CWD: D:\ryh\personal\interview
+10:16:46 HTTP server already running
+10:16:46 Starting MCP server...
+11:42:46 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+11:42:46 CWD: D:\ryh\personal\interview
+11:42:47 Starting HTTP server...
+11:42:50 HTTP server ready
+11:42:50 HTTP subprocess registered
+11:42:50 Starting MCP server...
+11:48:58 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+11:48:58 CWD: D:\ryh\personal\interview
+11:48:58 HTTP server already running
+11:48:58 Starting MCP server...
+14:32:25 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:32:25 CWD: D:\ryh\work\python_workspace\bisheng
+14:32:26 Starting HTTP server...
+14:32:29 HTTP server ready
+14:32:29 HTTP subprocess registered
+14:32:29 Starting MCP server...
+14:45:03 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:45:03 CWD: D:\ryh\work\python_workspace\bisheng
+14:45:03 HTTP server already running
+14:45:03 Starting MCP server...
+17:07:27 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+17:07:27 CWD: D:\ryh\work\python_workspace\loop-agent-center
+17:07:27 HTTP server already running
+17:07:27 Starting MCP server...
+20:34:25 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+20:34:25 CWD: D:\ryh\work\python_workspace\loop-agent-center
+20:34:26 Starting HTTP server...
+20:34:28 HTTP server ready
+20:34:28 HTTP subprocess registered
+20:34:28 Starting MCP server...
+09:36:45 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+09:36:45 CWD: D:\ryh\work\python_workspace\loop-agent-center
+09:36:46 Starting HTTP server...
+09:36:55 HTTP server ready
+09:36:55 HTTP subprocess registered
+09:36:55 Starting MCP server...
+10:00:33 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:00:33 CWD: D:\ryh\work\python_workspace\loop-agent-center
+10:00:33 HTTP server already running
+10:00:33 Starting MCP server...
+10:01:26 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:01:26 CWD: D:\ryh\work\python_workspace\loop-agent-center
+10:01:26 HTTP server already running
+10:01:26 Starting MCP server...
+10:07:24 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:07:24 CWD: D:\ryh\work\python_workspace\loop-agent-center
+10:07:24 HTTP server already running
+10:07:24 Starting MCP server...
+10:14:11 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:14:11 CWD: D:\ryh\work\python_workspace\loop-agent-center
+10:14:15 HTTP server already running
+10:14:15 Starting MCP server...
+10:25:07 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:25:07 CWD: D:\ryh\work\python_workspace\bisheng
+10:25:08 Starting HTTP server...
+10:25:10 HTTP server ready
+10:25:10 HTTP subprocess registered
+10:25:10 Starting MCP server...
+10:26:54 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:26:54 CWD: D:\ryh\work\python_workspace\bisheng
+10:26:55 HTTP server already running
+10:26:55 Starting MCP server...
+10:42:51 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+10:42:51 CWD: D:\ryh\personal\interview
+10:42:51 HTTP server already running
+10:42:51 Starting MCP server...
+11:26:20 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+11:26:20 CWD: D:\ryh\personal\interview
+11:26:20 HTTP server already running
+11:26:20 Starting MCP server...
+11:30:48 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+11:30:48 CWD: D:\ryh\work\python_workspace\bisheng
+11:30:48 HTTP server already running
+11:30:48 Starting MCP server...
+11:33:42 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+11:33:42 CWD: D:\ryh\personal\interview
+11:33:42 HTTP server already running
+11:33:42 Starting MCP server...
+14:12:35 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:12:35 CWD: D:\ryh\personal\interview
+14:12:35 HTTP server already running
+14:12:35 Starting MCP server...
+14:16:48 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:16:48 CWD: D:\ryh\personal\interview
+14:16:48 HTTP server already running
+14:16:48 Starting MCP server...
+14:19:01 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:19:01 CWD: D:\ryh\personal\interview
+14:19:01 HTTP server already running
+14:19:01 Starting MCP server...
+14:21:33 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:21:33 CWD: D:\ryh\personal\interview
+14:21:33 HTTP server already running
+14:21:33 Starting MCP server...
+14:35:01 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:35:01 CWD: D:\ryh\personal\interview
+14:35:01 HTTP server already running
+14:35:01 Starting MCP server...
+14:37:09 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:37:09 CWD: D:\ryh\work\python_workspace\bisheng
+14:37:09 HTTP server already running
+14:37:09 Starting MCP server...
+14:49:13 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+14:49:13 CWD: D:\ryh\work\python_workspace\bisheng
+14:49:13 HTTP server already running
+14:49:13 Starting MCP server...
+15:55:04 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+15:55:04 CWD: D:\ryh\personal\interview
+15:55:04 HTTP server already running
+15:55:04 Starting MCP server...
+15:56:48 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+15:56:48 CWD: D:\ryh\work\python_workspace\loop-agent-center
+15:56:48 HTTP server already running
+15:56:48 Starting MCP server...
+17:47:57 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+17:47:57 CWD: D:\ryh\personal\study
+17:47:57 HTTP server already running
+17:47:57 Starting MCP server...
+18:29:52 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+18:29:52 CWD: D:\ryh\work\python_workspace\bisheng
+18:29:52 HTTP server already running
+18:29:52 Starting MCP server...
+19:02:24 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+19:02:24 CWD: D:\ryh\personal\study\ryhtoolsWinAutoWx
+19:02:24 HTTP server already running
+19:02:24 Starting MCP server...
+19:03:38 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+19:03:38 CWD: D:\ryh\personal\study
+19:03:38 HTTP server already running
+19:03:38 Starting MCP server...
+19:10:46 Project dir: D:\ryh\personal\study\ryhtoolsWinAutoWx
+19:10:46 CWD: D:\ryh\work\python_workspace\loop-agent-center
+19:10:46 HTTP server already running
+19:10:46 Starting MCP server...

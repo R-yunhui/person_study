@@ -31,7 +31,27 @@
       "Bash(D:/python/python.exe *)",
       "mcp__tavily__tavily_extract",
       "mcp__context7__resolve-library-id",
-      "mcp__context7__query-docs"
+      "mcp__context7__query-docs",
+      "PowerShell(python -c \"from deepagents.middleware.subagents import SubAgent; print\\('SubAgent OK'\\)\" 2>&1)",
+      "PowerShell(uv run *)",
+      "WebFetch(domain:skills.sh)",
+      "PowerShell(git clone https://github.com/wuyoscar/gpt_image_2_skill \"$env:USERPROFILE\\\\.claude\\\\skills\\\\gpt-image\")",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(dir \"$env:USERPROFILE\\\\.claude\\\\skills\\\\gpt-image\\\\skills\" -Recurse -Depth 2)",
+      "PowerShell(Move-Item *)",
+      "PowerShell(dir \"$env:USERPROFILE\\\\.claude\\\\skills\\\\gpt-image\")",
+      "Bash(command -v gpt-image)",
+      "Bash(Get-Process -Name \"python*\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object Id, ProcessName, CommandLine)",
+      "Bash(Format-Table -AutoSize)",
+      "PowerShell(Stop-Process *)",
+      "PowerShell(Start-Process -FilePath \"D:\\\\python\\\\python.exe\" -ArgumentList \"-m\", \"uvicorn\", \"server:app\", \"--host\", \"127.0.0.1\", \"--port\", \"8000\" -WorkingDirectory \"D:\\\\ryh\\\\personal\\\\study\\\\ryhtoolsWinAutoWx\" -WindowStyle Hidden; Start-Sleep -Seconds 2; try { $r = Invoke-WebRequest -Uri \"http://127.0.0.1:8000/docs\" -TimeoutSec 3 -ErrorAction Stop; Write-Output \"HTTP 服务已启动\" } catch { Write-Output \"启动失败: $_\" })",
+      "PowerShell(python -c \"import ast; ast.parse\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\pywinauto\\\\auto_reply.py', encoding='utf-8'\\).read\\(\\)\\); print\\('语法OK'\\)\")",
+      "PowerShell(python -c \"import ast; ast.parse\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\pywinauto\\\\auto_reply.py', encoding='utf-8'\\).read\\(\\)\\); print\\('语法 OK'\\)\")",
+      "Bash(cat)",
+      "Bash(python /tmp/fix_reply.py)",
+      "PowerShell(python -c \"import ast; ast.parse\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\pywinauto\\\\auto_reply.py', encoding='utf-8'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "PowerShell(git *)"
     ]
   }
 }
