@@ -17,3 +17,7 @@ wheels/
 
 # Logs
 mcp_startup.log
+
+@AutomationLog.txt
+pywinauto/decoded_images/
+pywinauto/__pycache__/

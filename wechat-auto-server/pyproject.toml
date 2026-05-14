@@ -1,0 +1,31 @@
+[project]
+name = "wechat-auto-server"
+version = "0.1.0"
+description = "微信自动化服务 — FastAPI + MCP + pywinauto/uiautomation"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "pywinauto>=0.6.9",
+    "uiautomation>=2.0.29",
+    "psutil>=7.0.0",
+    "pyperclip>=1.9.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "typer>=0.15.0",
+]
+[project.optional-dependencies]
+mcp = ["fastmcp>=3.2.0"]
+dev = ["pytest>=8.0.0", "pytest-asyncio>=0.24.0"]
+
+[project.scripts]
+wechat-auto = "wechat_auto.cli:app"
+wechat-mcp = "wechat_auto.mcp:run"
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["wechat_auto*"]

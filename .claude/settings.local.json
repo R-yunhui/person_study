@@ -53,7 +53,21 @@
       "PowerShell(python -c \"import ast; ast.parse\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\pywinauto\\\\auto_reply.py', encoding='utf-8'\\).read\\(\\)\\); print\\('OK'\\)\")",
       "PowerShell(git *)",
       "Bash(python *)",
-      "PowerShell(python -c \"import json; data=json.load\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\chat_data_structured.json', encoding='utf-8'\\)\\); [print\\(m['chat'], '|', m['is_group'], '|', m['last_message'][:30]\\) for m in data[:5]]\")"
+      "PowerShell(python -c \"import json; data=json.load\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\chat_data_structured.json', encoding='utf-8'\\)\\); [print\\(m['chat'], '|', m['is_group'], '|', m['last_message'][:30]\\) for m in data[:5]]\")",
+      "PowerShell(Join-Path *)",
+      "mcp__plugin_github_github__fork_repository",
+      "PowerShell(uv pip *)",
+      "PowerShell(python D:\\\\ryh\\\\personal\\\\study\\\\wechat-decrypt\\\\setup.py --check 2>&1; Get-Content D:\\\\ryh\\\\personal\\\\study\\\\wechat-decrypt\\\\setup.py -TotalCount 20)",
+      "PowerShell(python D:\\\\ryh\\\\personal\\\\study\\\\wechat-decrypt\\\\find_image_key.py 2>&1)",
+      "PowerShell(python D:\\\\ryh\\\\personal\\\\study\\\\wechat-decrypt\\\\main.py decrypt 2>&1)",
+      "Bash(python3 -c ' *)",
+      "PowerShell(python -c \"import uiautomation as auto; print\\(auto.__version__\\)\" 2>&1)",
+      "PowerShell(python -c \"import ast; ast.parse\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\pywinauto\\\\uia_wechat.py', encoding='utf-8'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "PowerShell(python D:/ryh/personal/study/pywinauto/uia_wechat.py 2>&1)",
+      "PowerShell(New-Item *)",
+      "PowerShell(python -c \"import tomllib; tomllib.load\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\wechat-auto-server\\\\pyproject.toml', 'rb'\\)\\); print\\('OK'\\)\")",
+      "PowerShell(python -c \"import tomllib; tomllib.load\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\wechat-auto-server\\\\pyproject.toml', 'rb'\\)\\); print\\('TOML OK'\\)\")",
+      "PowerShell(Get-Content *)"
     ]
   }
 }
