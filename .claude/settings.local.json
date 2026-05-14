@@ -51,7 +51,9 @@
       "Bash(cat)",
       "Bash(python /tmp/fix_reply.py)",
       "PowerShell(python -c \"import ast; ast.parse\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\pywinauto\\\\auto_reply.py', encoding='utf-8'\\).read\\(\\)\\); print\\('OK'\\)\")",
-      "PowerShell(git *)"
+      "PowerShell(git *)",
+      "Bash(python *)",
+      "PowerShell(python -c \"import json; data=json.load\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\chat_data_structured.json', encoding='utf-8'\\)\\); [print\\(m['chat'], '|', m['is_group'], '|', m['last_message'][:30]\\) for m in data[:5]]\")"
     ]
   }
 }
