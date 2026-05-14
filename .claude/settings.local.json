@@ -67,7 +67,15 @@
       "PowerShell(New-Item *)",
       "PowerShell(python -c \"import tomllib; tomllib.load\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\wechat-auto-server\\\\pyproject.toml', 'rb'\\)\\); print\\('OK'\\)\")",
       "PowerShell(python -c \"import tomllib; tomllib.load\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\wechat-auto-server\\\\pyproject.toml', 'rb'\\)\\); print\\('TOML OK'\\)\")",
-      "PowerShell(Get-Content *)"
+      "PowerShell(Get-Content *)",
+      "Bash(pip --version)",
+      "Bash(py --version)",
+      "Bash(where python *)",
+      "Bash(tasklist /FI \"IMAGENAME eq Weixin.exe\")",
+      "Bash(tasklist /FI \"IMAGENAME eq WeChat.exe\")",
+      "Bash(tasklist)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }

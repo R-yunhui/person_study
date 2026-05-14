@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -4673,6 +4673,7 @@ dependencies = [
     { name = "sqlmodel" },
     { name = "tiktoken" },
     { name = "uapi-sdk-python" },
+    { name = "uiautomation" },
     { name = "uvicorn" },
 ]
 
@@ -4735,6 +4736,7 @@ requires-dist = [
     { name = "sqlmodel", specifier = ">=0.0.14" },
     { name = "tiktoken", specifier = ">=0.12.0" },
     { name = "uapi-sdk-python", specifier = ">=0.1.10" },
+    { name = "uiautomation", specifier = ">=2.0.29" },
     { name = "uvicorn", specifier = ">=0.27.0" },
 ]
 provides-extras = ["dev"]
@@ -4896,6 +4898,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ed/62/cf85782b52fc71f07b511fb41622d2b627815bbfcd468552e2ece5b8ded4/uapi_sdk_python-0.1.17.tar.gz", hash = "sha256:3cbd603603e0139a943e5a720f41326056ed9e1ea17e83d60d6e18f764fbfa6b", size = 43115, upload-time = "2026-04-15T08:43:15.655Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a5/9c/71461cf6d64b4f8edb9be7a045b3eb9bc3755690dcd2706632d0aa2c4dec/uapi_sdk_python-0.1.17-py3-none-any.whl", hash = "sha256:ed14d4fb8b95b41b40239adeb7cee094fe1442f67ed72d8d1a539127cfd80372", size = 41164, upload-time = "2026-04-15T08:43:14.739Z" },
+]
+
+[[package]]
+name = "uiautomation"
+version = "2.0.29"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "comtypes" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/bc/23/8238b5cb73e54c3618ce4d443c1830a2749264a0d61a9b61637096b8dc7a/uiautomation-2.0.29.tar.gz", hash = "sha256:3c169112043ce21065aead1d79c3baebdafc9cf03bd24ded02b2db11d423d88d", size = 203970, upload-time = "2025-08-05T05:14:41.194Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/27/b9c4b33b4129805fa2c437fa13da06c71e74213ae46da098d194d89834fe/uiautomation-2.0.29-py3-none-any.whl", hash = "sha256:5dd51c9e77e70470142a13d903be67f256c445e7cf20b47ada0ece2bdaff9f32", size = 198985, upload-time = "2025-08-05T05:14:39.552Z" },
 ]
 
 [[package]]
