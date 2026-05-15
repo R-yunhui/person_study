@@ -71,6 +71,16 @@ def send_file(contact: str, filepath: str):
         return {"ok": False, "error": str(e)}
 
 
+@app.post("/send-image")
+def send_image(contact: str, image_path: str):
+    """向联系人发送图片（显示为图片缩略图）。"""
+    try:
+        ok = get_backend().send_image(contact, image_path)
+        return {"ok": ok}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
 @app.post("/dump")
 def dump_controls(req: DumpRequest):
     """导出控件树（调试用）。"""

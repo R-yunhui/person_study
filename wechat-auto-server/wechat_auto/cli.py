@@ -3,6 +3,7 @@
 import typer
 import uvicorn
 
+from wechat_auto.api import app as fastapi_app
 from wechat_auto.backends import create_backend
 from wechat_auto.config import settings
 
@@ -15,8 +16,6 @@ def serve(
     port: int = typer.Option(8000, "--port", "-p", help="监听端口"),
 ):
     """启动 FastAPI HTTP 服务。"""
-    from wechat_auto.api import app as fastapi_app
-
     uvicorn.run(fastapi_app, host=host, port=port)
 
 
@@ -41,6 +40,16 @@ def file(
 
 
 @app.command()
+def image(
+    contact: str = typer.Argument(..., help="联系人名称"),
+    path: str = typer.Argument(..., help="图片路径"),
+):
+    """发送图片（显示为缩略图）。"""
+    ok = create_backend().send_image(contact, path)
+    typer.echo(f"发送{'成功' if ok else '失败'}")
+
+
+@app.command()
 def dump(
     max_count: int = typer.Option(30, "--max", "-n", help="控件数量上限"),
 ):
@@ -53,8 +62,7 @@ def dump(
 @app.command()
 def agent():
     """启动自动回复 Agent（轮询 → LLM → 回复）。"""
-    from wechat_auto.agent import run as agent_run
-
+    from wechat_auto.agent import run as agent_run  # noqa: optional dep
     agent_run()
 
 

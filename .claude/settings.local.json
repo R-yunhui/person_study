@@ -75,7 +75,11 @@
       "Bash(tasklist /FI \"IMAGENAME eq WeChat.exe\")",
       "Bash(tasklist)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "PowerShell(Get-Content D:\\\\ryh\\\\personal\\\\study\\\\.claude\\\\settings.local.json -Encoding UTF8 | python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(list\\(d.keys\\(\\)\\), ensure_ascii=False\\)\\)\")",
+      "PowerShell(python -c \"from PIL import Image; print\\('Pillow OK'\\)\" 2>&1)",
+      "PowerShell(python -c \"import os; p=r'D:\\\\ryh\\\\personal\\\\interview\\\\简历\\\\任运辉_简历.pdf'; print\\('存在' if os.path.isfile\\(p\\) else '不存在'\\); print\\(repr\\(p\\)\\)\")",
+      "PowerShell(python -c \"import ast; ast.parse\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\wechat-auto-server\\\\wechat_auto\\\\backends\\\\uia_bk.py'\\).read\\(\\)\\)\" 2>&1; \\(Get-Item D:\\\\ryh\\\\personal\\\\study\\\\wechat-auto-server\\\\wechat_auto\\\\backends\\\\uia_bk.py\\).Length)"
     ]
   }
 }

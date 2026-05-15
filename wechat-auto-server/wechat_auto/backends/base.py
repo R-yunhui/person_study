@@ -27,6 +27,11 @@ class WeChatBackend(ABC):
         ...
 
     @abstractmethod
+    def send_image(self, contact: str, image_path: str) -> bool:
+        """向单个联系人发送图片（CF_DIB 剪贴板，显示为图片缩略图）。"""
+        ...
+
+    @abstractmethod
     def dump_controls(self, max_count: int = 30) -> list[dict]:
         """导出控件树（调试用）。"""
         ...

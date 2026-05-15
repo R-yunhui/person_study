@@ -65,6 +65,42 @@ def dump_controls(max_count: int = 30) -> dict:
         return {"ok": False, "error": str(e)}
 
 
+@app.tool()
+def send_file(
+    contact: str,
+    filepath: str,
+) -> dict:
+    """向指定联系人发送文件（显示为文件图标）。
+
+    Args:
+        contact: 好友或群聊名称
+        filepath: 文件路径（绝对路径）
+    """
+    try:
+        ok = get_backend().send_file(contact, filepath)
+        return {"ok": ok}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
+@app.tool()
+def send_image(
+    contact: str,
+    image_path: str,
+) -> dict:
+    """向指定联系人发送图片（显示为图片缩略图，非文件图标）。
+
+    Args:
+        contact: 好友或群聊名称
+        image_path: 图片路径（绝对路径，支持 jpg/png/gif/bmp 等格式）
+    """
+    try:
+        ok = get_backend().send_image(contact, image_path)
+        return {"ok": ok}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
 def run():
     """通过 CLI 启动 MCP 服务器。"""
     app.run()
