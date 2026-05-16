@@ -86,7 +86,9 @@
       "PowerShell(python -c \"import wechat_cli; print\\(wechat_cli.__file__\\)\" 2>$null)",
       "Bash(uv pip *)",
       "Bash(jobs -l)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(Select-Object -First 5)"
     ]
   }
 }
