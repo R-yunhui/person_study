@@ -22,6 +22,13 @@ class WeChatBackend(ABC):
         ...
 
     @abstractmethod
+    def send_text_with_mention(
+        self, group: str, mentions: list[str], message: str
+    ) -> bool:
+        """在群聊中发送 @提及 消息。"""
+        ...
+
+    @abstractmethod
     def send_file(self, contact: str, filepath: str) -> bool:
         """向单个联系人发送文件。"""
         ...

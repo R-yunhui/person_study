@@ -66,6 +66,26 @@ def dump_controls(max_count: int = 30) -> dict:
 
 
 @app.tool()
+def send_text_with_mention(
+    group: str,
+    mentions: list[str],
+    message: str,
+) -> dict:
+    """向群聊发送 @提及 消息。
+
+    Args:
+        group: 群聊名称
+        mentions: 要 @ 的人名列表（如 ["王鑫", "李四"]）
+        message: @ 之后发送的消息内容
+    """
+    try:
+        ok = get_backend().send_text_with_mention(group, mentions, message)
+        return {"ok": ok}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
+@app.tool()
 def send_file(
     contact: str,
     filepath: str,

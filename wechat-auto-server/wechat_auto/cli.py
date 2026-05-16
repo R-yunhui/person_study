@@ -50,6 +50,18 @@ def image(
 
 
 @app.command()
+def mention(
+    group: str = typer.Argument(..., help="群聊名称"),
+    mentions: str = typer.Argument(..., help="要 @ 的人，多个用逗号分隔"),
+    message: str = typer.Argument(..., help="消息内容"),
+):
+    """在群聊中发送 @提及 消息。"""
+    names = [m.strip() for m in mentions.split(",") if m.strip()]
+    ok = create_backend().send_text_with_mention(group, names, message)
+    typer.echo(f"发送{'成功' if ok else '失败'}")
+
+
+@app.command()
 def dump(
     max_count: int = typer.Option(30, "--max", "-n", help="控件数量上限"),
 ):

@@ -186,6 +186,27 @@ class UiaBackend(WeChatBackend):
         time.sleep(0.2)
         return True
 
+    def send_text_with_mention(
+        self, group: str, mentions: list[str], message: str
+    ) -> bool:
+        self._ensure_attached()
+        self._search_contact(group)
+        self._click_input()
+        for name in mentions:
+            auto.SendKeys("@", waitTime=0.01)
+            time.sleep(0.4)
+            pyperclip.copy(name)
+            auto.SendKeys("{Ctrl}v", waitTime=0.01)
+            time.sleep(0.5)
+            auto.SendKeys("{Enter}", waitTime=0.01)
+            time.sleep(0.3)
+        pyperclip.copy(message)
+        auto.SendKeys("{Ctrl}v", waitTime=0.01)
+        time.sleep(settings.message_delay)
+        auto.SendKeys("{Enter}", waitTime=0.01)
+        time.sleep(0.2)
+        return True
+
     def send_messages(self, friends: Sequence[str], messages: Sequence[str]) -> list[dict]:
         self._ensure_attached()
         results = []

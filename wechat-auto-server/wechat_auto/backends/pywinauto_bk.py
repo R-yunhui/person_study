@@ -187,6 +187,27 @@ class PyWinAutoBackend(WeChatBackend):
         time.sleep(0.2)
         return True
 
+    def send_text_with_mention(
+        self, group: str, mentions: list[str], message: str
+    ) -> bool:
+        self._ensure_attached()
+        self._search_contact(group)
+        self._click_input()
+        for name in mentions:
+            keyboard.send_keys("@")
+            time.sleep(0.4)
+            pyperclip.copy(name)
+            keyboard.send_keys("^v")
+            time.sleep(0.5)
+            keyboard.send_keys("{ENTER}")
+            time.sleep(0.3)
+        pyperclip.copy(message)
+        keyboard.send_keys("^v")
+        time.sleep(settings.message_delay)
+        keyboard.send_keys("{ENTER}")
+        time.sleep(0.2)
+        return True
+
     def send_messages(self, friends: Sequence[str], messages: Sequence[str]) -> list[dict]:
         self._ensure_attached()
         results = []

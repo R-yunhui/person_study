@@ -21,6 +21,16 @@ description: 通过 CLI 操控微信发送消息/文件/图片。当用户要求
 uv run wechat-auto send "联系人" "消息内容"
 ```
 
+### 在群聊中 @提及 某人
+
+```bash
+uv run wechat-auto mention "群名" "王鑫" "消息内容"
+# @多人用逗号分隔
+uv run wechat-auto mention "群名" "王鑫,李四" "大家好"
+```
+
+注意：此命令将群聊输入到输入框、@人名选择后，再发送消息；适合群聊中提醒特定成员。
+
 ### 发送文件（显示为文件图标）
 
 ```bash

@@ -28,8 +28,12 @@ class MessageFilter:
         my_names: list[str],
         self_sent_fn: SelfSentFn | None = None,
         decoded_images: dict[int, str] | None = None,
+        file_contents: dict[int, str] | None = None,
     ) -> tuple[str, bool, list[str]]:
-        """处理消息列表，返回 (合并文本, 是否被@, 多模态图片路径列表)。"""
+        """处理消息列表，返回 (合并文本, 是否被@, 多模态图片路径列表)。
+
+        file_contents: {timestamp: "文件摘要文本"}
+        """
         new_text = ""
         mentioned = False
         image_paths: list[str] = []
@@ -66,6 +70,8 @@ class MessageFilter:
                     extra = " (已解码)"
                 else:
                     extra = f" (格式不支持: {ext})"
+            elif msg_type == "链接/文件" and file_contents and msg_ts in file_contents:
+                extra = f"\n  {file_contents[msg_ts]}"
 
             new_text += f"[{display}]: {content}{extra}\n"
             if is_group and any(n in content for n in my_names):

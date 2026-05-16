@@ -1,12 +1,14 @@
 """Agent 主循环 — 轮询 → 过滤 → LLM → 发送"""
 
 import logging
+import os
+import sys
 import time
 
 from wechat_auto.agent.filters import MessageFilter
 from wechat_auto.agent.images import decode_image
 from wechat_auto.agent.llm import LLMEngine
-from wechat_auto.agent.monitors import get_new_messages, get_context, is_self_sent
+from wechat_auto.agent.monitors import get_new_messages, get_context, is_self_sent, resolve_file_path, read_file_content
 from wechat_auto.backends import create_backend
 from wechat_auto.config import settings
 
@@ -15,6 +17,7 @@ log = logging.getLogger("wechat.agent")
 
 def run():
     """启动 Agent：连接微信 → 轮询 → 自动回复。"""
+    logging.basicConfig(stream=sys.stdout, level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s", datefmt="%H:%M:%S")
     monitor_chats = [c.strip() for c in settings.monitor_chats.split(",") if c.strip()]
     my_names = [n.strip() for n in settings.my_names.split(",") if n.strip()]
     llm = LLMEngine(settings.llm_model, settings.llm_api_key, settings.llm_base_url)
@@ -67,11 +70,24 @@ def run():
                         if img:
                             decoded_images[m["timestamp"]] = img
 
+                # 预解析文件消息
+                file_contents: dict[int, str] = {}
+                for m in chat_msgs:
+                    if m.get("msg_type") == "链接/文件":
+                        chat_name = m.get("chat", "")
+                        fp = resolve_file_path(chat_name, m.get("timestamp", 0))
+                        if fp:
+                            content = read_file_content(fp)
+                            if content:
+                                file_contents[m["timestamp"]] = f"[文件: {os.path.basename(fp)}]\n{content[:600]}"
+                                log.info("文件已解析: %s (%d 字符)", fp, len(content))
+
                 # 过滤消息
                 new_text, mentioned, image_paths = mfilter.process_messages(
                     chat_msgs, is_group, my_names,
                     self_sent_fn=lambda c, t, ts: is_self_sent(c, t, ts, my_names),
                     decoded_images=decoded_images,
+                    file_contents=file_contents,
                 )
 
                 if not new_text:

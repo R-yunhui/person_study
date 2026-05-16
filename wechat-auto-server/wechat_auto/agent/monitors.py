@@ -2,6 +2,7 @@
 
 import json
 import logging
+import os
 import re
 import subprocess
 from datetime import datetime, timedelta
@@ -55,3 +56,53 @@ def is_self_sent(chat: str, content: str, timestamp: int, my_names: list[str]) -
         if m and (m.group(2).strip() == content or m.group(2).strip() == first_line):
             return m.group(1).strip() in my_names
     return False
+
+
+def resolve_file_path(chat: str, timestamp: int) -> str | None:
+    """通过 history --media 解析文件消息的本地路径。"""
+    start = datetime.fromtimestamp(timestamp - 10).strftime("%Y-%m-%d %H:%M")
+    text = _run_cli(
+        "history", chat, "--limit", "5", "--start-time", start,
+        "--format", "text", "--media", raw=True,
+    )
+    if not isinstance(text, str):
+        return None
+    for line in text.splitlines():
+        stripped = line.strip()
+        if os.path.isfile(stripped):
+            return stripped
+    return None
+
+
+def read_file_content(filepath: str, max_chars: int = 2000) -> str | None:
+    """读取可读文件内容，用于 LLM 分析。"""
+    ext = os.path.splitext(filepath)[1].lower()
+    text_exts = {".txt", ".md", ".py", ".js", ".ts", ".json", ".csv", ".xml",
+                 ".yaml", ".yml", ".toml", ".ini", ".cfg", ".conf", ".log",
+                 ".html", ".css", ".sql", ".sh", ".bat", ".ps1", ".go", ".rs",
+                 ".java", ".c", ".cpp", ".h", ".hpp"}
+    if ext in text_exts:
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                return f.read(max_chars)
+        except Exception:
+            try:
+                with open(filepath, "r", encoding="gbk") as f:
+                    return f.read(max_chars)
+            except Exception:
+                pass
+    elif ext == ".pdf":
+        try:
+            import importlib.util
+            if importlib.util.find_spec("pdfminer"):
+                from pdfminer.high_level import extract_text
+                return extract_text(filepath)[:max_chars]
+            elif importlib.util.find_spec("PyMuPDF"):
+                import fitz
+                doc = fitz.open(filepath)
+                text = "".join(page.get_text() for page in doc)
+                doc.close()
+                return text[:max_chars]
+        except Exception:
+            pass
+    return None

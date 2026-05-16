@@ -1,8 +1,13 @@
-"""配置管理 — 环境变量 + 命令行"""
+"""配置管理 — 环境变量 + .env + 命令行"""
 
 import os
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Literal
+
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
 
 @dataclass
@@ -50,7 +55,7 @@ class Settings:
 
     # LLM
     llm_model: str = field(
-        default_factory=lambda: os.environ.get("QWEN_CHAT_MODEL", "qwen3.5-plus")
+        default_factory=lambda: os.environ.get("QWEN_CHAT_MODEL", "qwen3.6-27b-fp8")
     )
     llm_api_key: str = field(
         default_factory=lambda: os.environ.get("DASHSCOPE_API_KEY", "")
