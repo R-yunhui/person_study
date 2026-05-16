@@ -80,7 +80,13 @@
       "PowerShell(python -c \"from PIL import Image; print\\('Pillow OK'\\)\" 2>&1)",
       "PowerShell(python -c \"import os; p=r'D:\\\\ryh\\\\personal\\\\interview\\\\简历\\\\任运辉_简历.pdf'; print\\('存在' if os.path.isfile\\(p\\) else '不存在'\\); print\\(repr\\(p\\)\\)\")",
       "PowerShell(python -c \"import ast; ast.parse\\(open\\(r'D:\\\\ryh\\\\personal\\\\study\\\\wechat-auto-server\\\\wechat_auto\\\\backends\\\\uia_bk.py'\\).read\\(\\)\\)\" 2>&1; \\(Get-Item D:\\\\ryh\\\\personal\\\\study\\\\wechat-auto-server\\\\wechat_auto\\\\backends\\\\uia_bk.py\\).Length)",
-      "Skill(skill-creator:skill-creator)"
+      "Skill(skill-creator:skill-creator)",
+      "Bash(uv run *)",
+      "Bash(findstr /v Warning)",
+      "PowerShell(python -c \"import wechat_cli; print\\(wechat_cli.__file__\\)\" 2>$null)",
+      "Bash(uv pip *)",
+      "Bash(jobs -l)",
+      "Bash(git commit *)"
     ]
   }
 }
