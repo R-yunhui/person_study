@@ -88,7 +88,18 @@
       "Bash(jobs -l)",
       "Bash(git commit *)",
       "Bash(git push *)",
-      "Bash(Select-Object -First 5)"
+      "Bash(Select-Object -First 5)",
+      "mcp__plugin_github_github__get_file_contents",
+      "Read(//d//**)",
+      "Bash(npx skills@latest add mattpocock/skills)",
+      "PowerShell(npx skills@latest add mattpocock/skills 2>&1)",
+      "Bash(npx skills@latest *)",
+      "Bash(Get-ChildItem \"C:\\\\Users\\\\Admin\" -Directory -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object -ExpandProperty Name)",
+      "Bash(command -v claude)",
+      "Bash(npm root *)",
+      "Bash(rm -rf D:/ryh/personal/study/.agents/skills/caveman D:/ryh/personal/study/.agents/skills/grill-with-docs D:/ryh/personal/study/.agents/skills/handoff D:/ryh/personal/study/.agents/skills/improve-codebase-architecture D:/ryh/personal/study/.agents/skills/prototype D:/ryh/personal/study/.agents/skills/setup-matt-pocock-skills D:/ryh/personal/study/.agents/skills/to-issues D:/ryh/personal/study/.agents/skills/to-prd D:/ryh/personal/study/.agents/skills/triage D:/ryh/personal/study/.agents/skills/zoom-out)",
+      "Bash(rm -f D:/ryh/personal/study/.claude/skills/caveman D:/ryh/personal/study/.claude/skills/grill-with-docs D:/ryh/personal/study/.claude/skills/handoff D:/ryh/personal/study/.claude/skills/improve-codebase-architecture D:/ryh/personal/study/.claude/skills/prototype D:/ryh/personal/study/.claude/skills/setup-matt-pocock-skills D:/ryh/personal/study/.claude/skills/to-issues D:/ryh/personal/study/.claude/skills/to-prd D:/ryh/personal/study/.claude/skills/triage D:/ryh/personal/study/.claude/skills/zoom-out)"
     ]
   }
 }
