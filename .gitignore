@@ -21,3 +21,5 @@ mcp_startup.log
 @AutomationLog.txt
 pywinauto/decoded_images/
 pywinauto/__pycache__/
+voice_mode_windows/test_debug.wav
+ryhtoolsWinAutoWx/mcp_startup.log

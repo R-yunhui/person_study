@@ -99,7 +99,27 @@
       "Bash(command -v claude)",
       "Bash(npm root *)",
       "Bash(rm -rf D:/ryh/personal/study/.agents/skills/caveman D:/ryh/personal/study/.agents/skills/grill-with-docs D:/ryh/personal/study/.agents/skills/handoff D:/ryh/personal/study/.agents/skills/improve-codebase-architecture D:/ryh/personal/study/.agents/skills/prototype D:/ryh/personal/study/.agents/skills/setup-matt-pocock-skills D:/ryh/personal/study/.agents/skills/to-issues D:/ryh/personal/study/.agents/skills/to-prd D:/ryh/personal/study/.agents/skills/triage D:/ryh/personal/study/.agents/skills/zoom-out)",
-      "Bash(rm -f D:/ryh/personal/study/.claude/skills/caveman D:/ryh/personal/study/.claude/skills/grill-with-docs D:/ryh/personal/study/.claude/skills/handoff D:/ryh/personal/study/.claude/skills/improve-codebase-architecture D:/ryh/personal/study/.claude/skills/prototype D:/ryh/personal/study/.claude/skills/setup-matt-pocock-skills D:/ryh/personal/study/.claude/skills/to-issues D:/ryh/personal/study/.claude/skills/to-prd D:/ryh/personal/study/.claude/skills/triage D:/ryh/personal/study/.claude/skills/zoom-out)"
+      "Bash(rm -f D:/ryh/personal/study/.claude/skills/caveman D:/ryh/personal/study/.claude/skills/grill-with-docs D:/ryh/personal/study/.claude/skills/handoff D:/ryh/personal/study/.claude/skills/improve-codebase-architecture D:/ryh/personal/study/.claude/skills/prototype D:/ryh/personal/study/.claude/skills/setup-matt-pocock-skills D:/ryh/personal/study/.claude/skills/to-issues D:/ryh/personal/study/.claude/skills/to-prd D:/ryh/personal/study/.claude/skills/triage D:/ryh/personal/study/.claude/skills/zoom-out)",
+      "mcp__yunxiao__get_current_user",
+      "mcp__yunxiao__get_current_organization_info",
+      "mcp__yunxiao__search_projects",
+      "mcp__yunxiao__search_workitems",
+      "PowerShell(Get-NetTCPConnection *)",
+      "Bash(rustc --version)",
+      "Bash(cargo --version)",
+      "Bash(npx claude-mem *)",
+      "Bash(npx skills *)",
+      "WebFetch(domain:langfuse.com)",
+      "WebFetch(domain:docs.ragas.org.cn)",
+      "WebFetch(domain:docs.ragas.io)",
+      "WebFetch(domain:docs.crewai.com)",
+      "WebFetch(domain:pypi.org)",
+      "PowerShell(ls *)",
+      "Bash(Get-Content *)",
+      "Bash(set PYTHONIOENCODING=utf-8)",
+      "Bash(PYTHONIOENCODING=utf-8 python 02_flow_router.py)",
+      "WebFetch(domain:docs.crewai.org.cn)",
+      "Bash(git *)"
     ]
   }
 }
