@@ -28,10 +28,10 @@ chat_model = ChatOpenAI(
 
 mcp_client = MultiServerMCPClient(
     connections={
-        "dbhub": {
+        "mcp_809961086783558": {
             "transport": "http",
-            "url": "http://localhost:8080/mcp",
-        }
+            "url": "http://192.168.2.131:30080/agent-toolkit/openapi/mcp/809961086783558/mcp",
+        },
     }
 )
 
@@ -71,6 +71,7 @@ async def main(query: str):
 
 
 if __name__ == "__main__":
+
     while True:
         query = input("请输入查询语句: ")
         if query == "exit":

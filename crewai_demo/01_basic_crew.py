@@ -76,6 +76,7 @@ def basic_crew_demo():
     # 获取最终完整结果
     result = streaming.result
     print("\n" + "=" * 60)
+    print(result)
     print("执行完成")
 
 
